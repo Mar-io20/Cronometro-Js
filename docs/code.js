@@ -23,14 +23,13 @@ function stops() {
   document.getElementById("counter").innerHTML = "00:00:00";
 }
 
-// function reinicia() {}
+// function reinicia() {} quando esse codigo for refatorado vou adicionar essa função
 
 function timer() {
   ss++;
   if (ss == 60) {
     ss = 0;
     mm++;
-
     if (mm == 60) {
       mm = 0;
       hh++;
