@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;500&display=swap");
+
+:root {
+  --color-purple: linear-gradient(
+    90.48deg,
+    rgba(136, 105, 201, 0.9) 0.4%,
+    #4c19b8 99.58%
+  );
+  --color-branca: #fff;
+  --color-sombra-font: rgba(0, 0, 0, 0.25);
+}
+
+body {
+  background: var(--color-purple);
+}
+.card-container {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  margin-top: 90px;
+}
+.title {
+  font-family: "Saira Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0 auto;
+  color: var(--color-branca);
+  box-shadow: 10px 10px 10px --color-sombra-font;
+}
+#counter {
+  color: var(--color-branca);
+  box-shadow: 10px 10px 10px --color-sombra-font;
+}
+
+.btn-componente {
+  display: flex;
+}
+
+.btn-circulo {
+    width: 60px;
+    height: 60px;
+    font-size: 12px;
+    border-radius: 360px;
+    border-style: none;
+    box-shadow: 0px 1px 14px 2px rgba(0, 0, 0, 0.49);
+    margin: 0 2vw;
+}
