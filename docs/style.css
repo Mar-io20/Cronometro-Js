@@ -13,14 +13,14 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 90px;
+  margin-top: 1vw;
 }
 .title {
   font-family: "Saira Condensed", sans-serif;
   font-style: normal;
   font-weight: 500;
   margin: 0 auto;
-  font-size: 80px;
+  font-size: 10vw;
   color: var(--color-branca);
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
@@ -28,9 +28,9 @@ body {
   font-family: "Saira Condensed", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 80px;
+  font-size: 10vw;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 2vw;
   color: var(--color-branca);
   text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
 }
@@ -40,14 +40,73 @@ body {
 }
 
 .btn-botao{
-  width: 90px;
-  height: 90px;
+  width: 10vw;
+  height: 10vw;
   border-radius: 100px;
   border-style: none;
   margin: 0 10px;
   box-shadow: 0px 1px 14px 2px rgba(0, 0, 0, 0.49);
 }
-.btn-img {
 
+.btn-img{
+  width: 4vw;
+}
+
+@media (max-width: 1440px) {
+  .title{
+    margin: 0 auto;
+    font-size: 5vw;
+  }  
+  #counter {
+    font-size: 5vw;
+    margin-top: 0;
+  }
+  .btn-botao{
+    width: 5vw;
+  height: 5vw;
+  }
+  .btn-img{
+    width: 2vw;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .card-container{
+    margin-top: 12vh;
+  }
+  .title{
+    margin: 0 auto;
+    font-size: 9vw;
+  }  
+  #counter {
+    font-size: 9vw;
+    margin-top: 0;
+  }
+  .btn-botao{
+    width: 9vw;
+    height: 9vw;
+  }
+  .btn-img{
+    width: 4vw;
+  }
+}
+@media (max-width: 425px) {
+  
+  .card-container{
+    margin-top: 15vh;
+  }
+  .title{
+    margin: 0 auto;
+    font-size: 12vw;
+  }  
+  #counter {
+    font-size: 12vw;
+    margin-top: 0;
+  }
+  .btn-botao{
+    width: 12vw;
+    height: 12vw;
+  }
 }
 
